@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Detection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Cloud Vision" />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+    </script>
+    <!-- Custom Theme files -->
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" type="text/css" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+    <!-- //online-fonts -->
+       <style type="text/css">
+
+    	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+*, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    background-color: #152733;
+}
+
+
+.form-holder {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+      margin-top: -11em;
+      margin-down: -10em;
+}
+
+.form-content .form-items {
+    border: 3px solid #fff;
+    padding: 40px;
+    display: inline-block;
+    width: 100%;
+    min-width: 540px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.form-content h3 {
+    color: #fff;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-content h3.form-title {
+    margin-bottom: 30px;
+}
+
+.form-content p {
+    color: #fff;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+
+.btn-primary{
+    background-color: #6C757D;
+    outline: none;
+    border: 0px;
+     box-shadow: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+    background-color: #495056;
+    outline: none !important;
+    border: none !important;
+     box-shadow: none;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <section class="main-banner" id="home">
+        <div class="layer">
+            <div class="header-wthree-top-w3layouts text-right">
+                <h1 class="logo"><a href="/">Home</a></h1>
+
+            </div>
+            <div class="container">
+                <div class="baner-info-w3layouts text-center">
+                    <h3>Detection - Results</h3>
+                </div>
+       <div class="top_move text-center">
+                <a href="#text" class="move-top"><span class="fa fa-arrow-down  mb-3" style="background-color:green;margin: 1em;" aria-hidden="true"></span></a>
+            </div>
+            </div>
+        </div>
+    </section>
+<section class="banner-bottom-w3ls py-lg-5 py-4" id="text">
+<div class="container py-sm-5 py-4">
+<div class="ab-grids row text-left pb-3">
+	<p>
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+		<ul class=flashes>
+		{% for message in messages %}
+		  <li>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	  {% endif %}
+	{% endwith %}
+</p>
+
+    <div class="form-body col-md-8" >
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content" >
+                    <div class="form-items">
+<h3>Detection - Results</h3>
+<hr style="background-color:white"> </hr>
+
+<ul>
+{% for itemm in itemss %}
+  <li style="color:white">{{ itemm }}</li>
+{% endfor %}
+</ul>
+
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div
+</div>
+
+</div>
+  </section>
+
+
+</body>
+
+</html>
