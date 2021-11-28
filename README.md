@@ -35,6 +35,16 @@ your preferred browser.
 ```sh
 127.0.0.1:8000
 ```
+
+## DEMO
+  ![Image 1](https://raw.githubusercontent.com/JKL404/Object_Detection_using_OpenCV/main/demo/image-1.png)
+  
+  ![Image 2](https://raw.githubusercontent.com/JKL404/Object_Detection_using_OpenCV/main/demo/image-2.png)
+  
+  ![Image 3](https://raw.githubusercontent.com/JKL404/Object_Detection_using_OpenCV/main/demo/image-3.png)
+  
+  ![Image 4](https://raw.githubusercontent.com/JKL404/Object_Detection_using_OpenCV/main/demo/image-4.png)
+
 ## Object List
   person
   
