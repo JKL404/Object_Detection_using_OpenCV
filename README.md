@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 OpenCV is the huge open-source library for computer vision, machine learning, and image processing and now it plays a major role in real-time operation which is very important in today’s systems. By using it, one can process images and videos to identify objects, faces, or even the handwriting of a human. This article focuses on detecting objects.
-![Cloud Vision](https://nanonets.com/blog/content/images/2021/04/cloud--1--1.gif)
+![Object Detection](https://neilyongyangnie.files.wordpress.com/2018/11/0_hmacefect2pyqoxf.jpg)
 
 ## Features
 
@@ -17,7 +17,7 @@ OpenCV is the huge open-source library for computer vision, machine learning, an
 ## Installation
 
 
-![google cloud](https://images.idgesg.net/images/article/2018/04/google-vision-api-screen-1-100755937-medium.jpg?auto=webp&quality=85,70)
+![Object Detection](https://s3-us-west-2.amazonaws.com/static.pyimagesearch.com/opencv-yolo/yolo_overpass_output.gif)
 
 
 
